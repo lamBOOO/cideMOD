@@ -89,7 +89,7 @@ Thus, a new conda environment can be setup to install the corresponding versions
 
    $ conda create --name cidemod python=3.11
    $ conda activate cidemod
-   $ conda install fenics-dolfinx=0.7.0 fenics-libdolfinx=0.7.0
+   $ conda install -c conda-forge fenics-dolfinx=0.7.0 fenics-libdolfinx=0.7.0
    $ git clone -b dolfinx-v0.7.0 --depth 1 --single-branch https://github.com/multiphenics/multiphenicsx.git
    $ pip install ./multiphenicsx
 
