@@ -1,3 +1,14 @@
+# Tutorial: Get current version running within Docker
+
+1. `docker run -it --name cidemod -v .:/shared cidetec/cidemod:v2.0.0 bash`
+2. TODO....
+
+
+
+
+
+
+
 .. |cideMOD_logo| image:: ./docs/source/Images/logo_final_cidemod_hor.png
   :alt: cideMOD_logo
 
