@@ -1,13 +1,13 @@
 # Tutorial: Get current version running within Docker
 
 1. `docker run -it --name cidemod -v .:/shared cidetec/cidemod:v2.0.0 bash`
-2. TODO....
+2. Go to /shared
+3. pip install -e . (Install package as editable)
+4. Revert all changes from commit 21de414 "cideMOD to dolfinx 0.7.0"
+  - Change all instances of FunctionSpaceBase to FunctionSpaceBase
+  - Change all isntances of dfx.fem.functionspace to dfx.fem.FunctionSpace
 
-
-
-
-
-
+When running docker make sure code from /shared is being used and not code from original image.
 
 .. |cideMOD_logo| image:: ./docs/source/Images/logo_final_cidemod_hor.png
   :alt: cideMOD_logo
